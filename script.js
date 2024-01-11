@@ -139,63 +139,39 @@ window.onclick = function(event) {
  
  
  
+ /* det her er til billedkunstsiden, den del med grid.
+ references: w3schools */
+
+// Funktion til at åbne modal med det angivne billede
+function openModal(imageSrc) {
+    // Hent modal-elementet og billedet i modalen
+    var modal = document.getElementById("myModal");
+    var modalImage = document.getElementById("modalImage");
+
+    // Vis modalen
+    modal.style.display = "block";
+    // Indstil kilden til billedet i modalen
+    modalImage.src = imageSrc;
+}
+
+// Funktion til at lukke modalen
+function closeModal() {
+    // Hent modal-elementet
+    var modal = document.getElementById("myModal");
+    // Skjul modalen
+    modal.style.display = "none";
+}
+
+// Luk modalen, hvis der klikkes uden for billedet
+window.onclick = function(event) {
+    // Hent modal-elementet
+    var modal = document.getElementById("myModal");
+    // Luk modalen, hvis det man klikker på er inde i "modalen"
+    if (event.target == modal) {
+        closeModal();
+    }
+}
  
  
  
- 
- 
- 
- 
- 
- // ------- det her er til billedkunst med de to elever man kan hover på //
- // men det virker ikke....
- 
- /* ******* references  ************
- Programmering 8: - ANKT - 25-10-2023 + det kode vi øvede den dag 
- 
- document.addEventListener("DOMContentLoaded", function() {
- 
- 
- // her er til den første elev
- // først en variable med lydfilen
- const audio1 = new Audio('comic5-25269.mp3'); 
- // så en som henter info om hvilket div der skal lyd til 
- const divElement1 = document.getElementById("#kunstElevEn");
- 
- 
- // en funktion som siger at når musen er i diven skal lyden afspilles
-     divElement1.addEventListener("mouseenter", function() {
-         audio1.play();
-     });
- 
- 
- // og en funktion som siger hvis musen forlader diven skal lyden stoppes
-     divElement1.addEventListener("mouseleave", function() {
-         audio1.pause();
-         audio1.currentTime = 0; /* her gør vi så lyden starter fra begyndelsen,
-         hver gang musen kommer ind på billedet 
-     });
- 
- /* her er til den næste elev - vi gør bare det samme som ovenover,
- men variablerne audio1 og divElement1 bliver til audio2 etc. 
- 
- 
- const audio2 = new Audio('comic5-25269.mp3'); 
- const divElement2 = document.getElementById("#kunstElevTo");
- 
- 
- // en funktion som siger at når musen er i diven skal lyden afspilles
-     divElement2.addEventListener("mouseenter", function() {
-         audio2.play();
-     });
- 
- 
- // og en funktion som siger hvis musen forlader diven skal lyden stoppes
-     divElement2.addEventListener("mouseleave", function() {
-         audio2.pause();
-         audio2.currentTime = 0; 
-     });
- 
- 
-   }); */
- 
+

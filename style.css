@@ -526,46 +526,92 @@ footer a{
   padding-left: 20px;
 }
 
-/* ---- kunst grid med kort ---- */ 
+/* ---- landing ---- */
 
-.fagContainer img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fagContainer h2{
-  margin-bottom: 2%;
-}
-
-.fagContainer h3{
-  font-size: 1vw;
-}
-
-.fagContainer{
+.textContainer{
   width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.textIndhold{
+  width: 90%;
+  margin: auto;
+  padding: 2% 0%;
+}
+
+.textIndhold p{
+  padding-bottom: 2%;
+}
+
+.textIndhold img{
+  width: 50%;
   height: auto;
 }
 
-.fagGrid{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto; 
-  justify-content: center;
-  gap: 4% 1%;
-  margin: 2% 0;
-}
 
+/* ---- kunst grid med kort ---- */ 
 .kunstKort{
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
-  border-radius: 15px;
+  width:100%;
+  height: auto;
 }
 
-.kunstKort > .linjefagKort{
-  width: auto;
-  padding:0;
+.kunstKort h3{
+  text-align: center;
+  padding-bottom: 2%;
+  margin: 2% 0 0 0;
 }
+
+
+.grid-container {
+  display: grid;
+  gap: 25px;
+  margin: auto;
+  width: 90%;
+}
+
+
+.grid-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  cursor: pointer;
+  border-radius: 15pt;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  max-width: 60%; 
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
 
 
 /*  unorganiseret liste style */
@@ -1056,6 +1102,13 @@ ul li{
   }
 }
 
+
+/* **** billedkunst grid *** */
+.grid-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
 /*----------------------------------------------Laptop------------------------------------*/
 
 @media screen and (min-width: 780px) {
@@ -1313,4 +1366,12 @@ ul li{
     transform: scale(1.1);
     box-shadow: 0px 2px 0px var(--bg-accent);
   }
+
+
+  /* billedkunst grid */
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  
 }
