@@ -532,6 +532,7 @@ footer a{
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
 }
 
 .textIndhold{
@@ -613,19 +614,6 @@ footer a{
 
 
 
-
-/*  unorganiseret liste style */
-
-
-/* hover eller klik og lyt på elevkort */
-
-.elev1{ /*temp photo */
-  background-image: url(images/lasse.jpg);
-}
-
-.elev2{ /*temp photo */
-  background-image: url(images/mia.jpg);
-}
 
 
 
