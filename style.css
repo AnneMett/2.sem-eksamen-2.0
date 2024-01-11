@@ -42,6 +42,7 @@ h2 {
   color: var(--text-primary);
   text-align: center;
   margin-top: 5%;
+  margin: 0 30%;
 }
 
 h3 {
@@ -170,7 +171,6 @@ video {
   font-family: "montserrat", sans-serif;
   font-size: 3vw;
   border-left: solid 3px #fba808;
-  margin: 0 33%;
   text-align: center;
   margin-top: 5%;
 }
@@ -251,6 +251,12 @@ video {
   background-color: #000f14;
   padding-top: 0.1%;
   margin-bottom: 5%;
+}
+
+.bloggen h2{
+  margin: 2% 37%;
+  /* jeg ved ikke hvorfor den abselut skal have mere en 30% for at sidde pænt,
+  når alle andre steder er 30% nok ? >:C */
 }
 
 .blog {
@@ -628,7 +634,6 @@ footer a{
 }
 
 #blanketinfo h2{
-  margin: auto;
   padding: 0 2%;
 }
 
@@ -882,7 +887,7 @@ ul li{
   h2 {
     font-size: 16pt;
     height: 10%;
-    margin: 0 12%;
+    margin: 0 30%;
   }
 
   h3 {
@@ -1214,7 +1219,7 @@ ul li{
 }
 
   h2 {
-    margin: 0 33%;
+    margin: 0 30%;
   }
 
   p {
