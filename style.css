@@ -198,7 +198,7 @@ video {
   /* en til at bestemme str. på kort */
   height: 350px;
   width: 350px;
-  background-color: aqua;
+  /*background-color: aqua; */
   margin: 2%;
   border-radius: 15px;
   display: flex;
@@ -424,33 +424,6 @@ video {
   color: var(--text-primary);
 }
 
-/* button stuff hvis vi vil bruge det 
-
-.btn{
-    padding: 10px 25px;
-    border: 2px solid #f39c12;
-    border-radius: 5px;
-    color: #f39c12;
-    text-decoration: none;
-    margin: 30px 0;
-    transition: all .5s ease;
-    font-weight: 600;
-}
-.btn:hover{
-    background-color: #f39c12;
-    color: #333;
-}
-.btn1{
-    margin-right: 15px;
-    background-color: #f39c12;
-    color: #000;
-}
-.btn1:hover{
-    background-color: transparent;
-    color: #f39c12;
-}
-
-*/
 
 /* ---------------------------- footer ---------------------- */
 
@@ -538,6 +511,7 @@ footer a{
   height: auto;
   display: flex;
   flex-direction: column;
+  margin: 2% 0;
 }
 
 .textIndhold{
@@ -553,10 +527,23 @@ footer a{
 .textIndhold img{
   width: 50%;
   height: auto;
+  margin-top: 2%;
 }
 
 .textIndhold h2{
-  font-size: 2vw;
+  font-size: 2.3vw;
+  margin-bottom: 2%;
+}
+
+
+.textIndhold li{
+  list-style: disc;
+  margin-left: 2%;
+  font-size: 1.7vw;
+}
+
+.textIndhold p{
+  font-size: 1.7vw;
 }
 
 
@@ -569,7 +556,7 @@ footer a{
 .kunstKort h2{
   text-align: center;
   margin: 2% 30%;
-  font-size: 2vw;
+  font-size: 2.3vw;
 }
 
 
@@ -620,11 +607,41 @@ footer a{
   cursor: pointer;
 }
 
+/* ---------- mød lærene sektion --------- */
 
 
+.laerer{
+  max-width: 350px;
+  height: auto;
+  position: relative;
+}
 
+.laerer img{
+  width: 100%;
+  height: aut0;
+}
 
+h5{
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 2vw;
+}
 
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  background-color: var(--bg-secondary);
+  color: white;
+  padding: 10% 0;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.overlay p{
+  font-weight: bold;
+}
 
 
 
@@ -1096,14 +1113,48 @@ ul li{
   #kunstTitel {
     font-size: 22pt;
   }
-}
 
-
-/* **** billedkunst grid *** */
+  /* **** billedkunst grid *** */
 .grid-container {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
+
+.grid-container{
+ max-width: 400px;
+}
+
+.læreImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.textIndhold img{
+  width: 100%;
+  height: auto;
+}
+
+.textIndhold p{
+  font-size: 12pt;
+}
+
+.textIndhold li{
+  font-size: 12pt; 
+}
+
+.textIndhold h2{
+  font-size: 16pt;
+}
+
+.overlay h5{
+  font-size: 14pt;
+}
+
+}
+
+
+
 
 /*----------------------------------------------Laptop------------------------------------*/
 
@@ -1368,6 +1419,13 @@ ul li{
   .grid-container {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  
+
+  .læreImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
   
 }
