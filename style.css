@@ -528,8 +528,7 @@ footer a{
 }
 
 #kunstTitel {
-  border-left: 4px solid var(--bg-accent);
-  padding-left: 20px;
+  margin-bottom: 5%;
 }
 
 /* ---- landing ---- */
@@ -556,6 +555,10 @@ footer a{
   height: auto;
 }
 
+.textIndhold h2{
+  font-size: 2vw;
+}
+
 
 /* ---- kunst grid med kort ---- */ 
 .kunstKort{
@@ -563,10 +566,10 @@ footer a{
   height: auto;
 }
 
-.kunstKort h3{
+.kunstKort h2{
   text-align: center;
-  padding-bottom: 2%;
-  margin: 2% 0 0 0;
+  margin: 2% 30%;
+  font-size: 2vw;
 }
 
 
