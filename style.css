@@ -405,6 +405,15 @@ video {
   margin: 2% 0;
 }
 
+.tilmelding p a {
+  color: #fba808;
+}
+
+.tilmelding p a:hover {
+  color: #fba808;
+  text-decoration: underline;
+}
+
 .tilmelding .knap1 {
   font-weight: bold;
 }
@@ -729,6 +738,13 @@ ul li{
   padding: 5%;
 }
 
+.kortubgfarve{
+  border-radius: 15px;
+  border: #fba808 solid 3px;
+  width: 65%;
+  padding: 5%;
+}
+
 #programli{
   margin-left: 5%;
 }
@@ -768,6 +784,98 @@ ul li{
   margin: 2% auto;
   padding: 2% 4%;
 }
+
+/*-----------------------------Bekræftelsesside----------------------*/
+
+.bekræftelse{
+  border: solid #fba808 3px;
+  border-radius: 15px;
+  text-align: center;
+  width: 65%;
+  padding: 3% 0;
+}
+
+.bekræftelse h2{
+  margin: 5% auto 2.5% auto;
+  border: none;
+}
+
+.bekræftelse p{
+  margin: 3% 0 5% 0;
+}
+
+.bekræftelse > .knap1{
+  padding: 1.5% 3%;
+}
+/*-----------------------------INDmeldelsesside----------------------*/
+.femkort{
+  width: 74.5%;
+  /*background-color: aqua;
+  /*height: 105vh;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.touafem, .treuafem{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.touafem .trin:first-child{
+  height: 56%;
+}
+
+.touafem .trin:nth-child(2){
+  height: 41%;
+}
+
+.touafem .trin:first-child .knap1{
+  padding: 2%;
+}
+
+.touafem .trin:first-child p{
+  margin-bottom: 5%;
+}
+
+.trin{
+  background-color: #000f14;
+  border-radius: 15px;
+  padding: 6%;
+}
+
+#trinubg{
+  display: flex;
+  flex-direction: row;
+  height: 21%;
+}
+
+#trinubg img{
+  border-radius: 15px;
+  height: 100%;
+}
+
+#trinubg div{
+  width: 75.5%;
+  padding: 6%;
+}
+
+#trinubg div a{
+  color: #fba808;
+}
+
+#trinubg div a:hover{
+  text-decoration: underline;
+}
+
+.treuafem .trin:nth-child(3){
+  height: 41%;
+}
+
 
 /*----------------------------------------Mobil---------------------------------*/
 
@@ -1069,6 +1177,7 @@ ul li{
     padding: 2% 4%;
     margin-top: 5%;
   }
+  
 
   /* instagram sektion */
 
@@ -1111,6 +1220,14 @@ ul li{
   height: 250px;
 }
 
+  /*****************Indmelding************/
+  .touafem, .treuafem{ /*lidt resposive*/
+    width: 100%;
+    height: auto;
+  }
+
+
+
 
   /* ******** billedkunst underside ******** */
   #kunstTitel {
@@ -1133,29 +1250,36 @@ ul li{
   justify-content: space-around;
 }
 
+/* ----- billedkunst sektioner med h2 -------- */
+
+.kunstKort h2{
+  font-size: 14pt;
+  margin: 10%;
+}
+
 .textIndhold img{
   width: 100%;
   height: auto;
 }
 
 .textIndhold p{
-  font-size: 12pt;
+  font-size: 10pt;
 }
 
 .textIndhold li{
-  font-size: 12pt; 
+  font-size: 10pt; 
 }
 
 .textIndhold h2{
-  font-size: 16pt;
+  font-size: 14pt;
+  margin: 10%;
 }
 
 .overlay h5{
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 }
-
 
 
 
