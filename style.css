@@ -1081,12 +1081,7 @@ ul li{
   }
 
   .instaGrid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    max-width: 100%;
-    row-gap: 2%;
-    column-gap: 2%;
-    justify-content: center;
+    display: none;
   }
 
   .grid-item {
@@ -1097,6 +1092,14 @@ ul li{
   .instaGrid img {
     max-width: 100px;
   }
+
+  .instaReel{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+
 
   /* footer */
 
@@ -1400,6 +1403,10 @@ ul li{
 
   .instaGrid img {
     max-width: 180px;
+  }
+
+  .instaReel{
+    display: none;
   }
 
   /* ****** Billedkunst underside **** */
