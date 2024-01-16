@@ -140,7 +140,7 @@ window.onclick = function(event) {
  
  
  /* det her er til billedkunstsiden, den del med grid.
- references: w3schools */
+ reference: https://www.w3schools.com/howto/howto_css_modal_images.asp */
 
 // Funktion til at åbne modal med det angivne billede
 function openModal(imageSrc) {
