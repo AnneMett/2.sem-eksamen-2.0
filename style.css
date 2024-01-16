@@ -540,7 +540,7 @@ footer a{
 }
 
 .textIndhold h2{
-  font-size: 2.3vw;
+  font-size: 2vw;
   margin-bottom: 2%;
 }
 
@@ -548,11 +548,11 @@ footer a{
 .textIndhold li{
   list-style: disc;
   margin-left: 2%;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
 }
 
 .textIndhold p{
-  font-size: 1.7vw;
+  font-size: 1.5vw;
 }
 
 
@@ -565,7 +565,7 @@ footer a{
 .kunstKort h2{
   text-align: center;
   margin: 2% 30%;
-  font-size: 2.3vw;
+  font-size: 2vw;
 }
 
 
@@ -576,6 +576,9 @@ footer a{
   width: 90%;
 }
 
+.grid-img{
+  position: relative;
+}
 
 .grid-img img {
   width: 100%;
@@ -583,6 +586,22 @@ footer a{
   object-fit: cover; 
   cursor: pointer;
   border-radius: 15pt;
+}
+
+.overlayOrange{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  background-color:#fbaa08bf; /* de sidste to bogstaver er gennemsigtigheden */
+  color: white;
+  padding: 10% 0;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.overlayOrange p{
+  font-weight: bold;
 }
 
 
@@ -604,6 +623,7 @@ footer a{
   height: auto;
   margin: auto;
   display: block;
+  border-radius: 15px;
 }
 
 .close {
@@ -620,9 +640,10 @@ footer a{
 
 
 .laerer{
-  max-width: 350px;
   height: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .laerer img{
@@ -630,10 +651,11 @@ footer a{
   height: aut0;
 }
 
+
 h5{
   color: var(--text-primary);
   font-family: var(--font-primary);
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .overlay{
@@ -645,12 +667,14 @@ h5{
   color: white;
   padding: 10% 0;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .overlay p{
   font-weight: bold;
 }
+
+
 
 
 
@@ -1244,11 +1268,17 @@ ul li{
  max-width: 400px;
 }
 
+.laerer{
+    max-width: 200px;
+    margin:2%;
+}
+
 .læreImg{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
 }
+
 
 /* ----- billedkunst sektioner med h2 -------- */
 
@@ -1556,7 +1586,7 @@ ul li{
   .læreImg{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   
 }
