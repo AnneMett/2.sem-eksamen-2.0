@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /Frontsession/
+Disallow: /Soegenefterstilhed
 
 User-agent: Googlebot-Image
 Disallow: /

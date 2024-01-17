@@ -69,6 +69,11 @@ a {
   text-decoration: none;
 }
 
+.gul{
+  color: var(--bg-accent);
+}
+
+
 /* ----------------------- knapper --------------------------------- */
 .knap1 {
   background-color: #fba808;
