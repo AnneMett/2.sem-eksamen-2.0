@@ -101,6 +101,8 @@
         </nav>
     </header>
     <nav class="mobile-nav">
+
+
         <button class="accordion">Om skolen</button>
         <div class="panel">
             <a href="#">Bestyrelse & skolekred</a>
@@ -151,8 +153,10 @@
     <main>
 
         <!-- *********landing med video og titel********* -->
-        <div class="videopladsholder">
-            <img src="images/musiklinje.svg" alt="midlertidligt billede istedet for video">
+        <div class="videopladsholder" id="videofilm">
+            <video controls muted loop src="images/musiklinjevideo.mp4">
+                <!-- temp video fra Efterksolen Ådalen youtube -->
+            </video>
             <div class="landing">
                 <h1 id="kunstTitel">Udtryk din <br> kreativitet i musik</h1>
                 <a href="tilmeldbesoegsdag.html" class="knap2 fylde">Besøg skolen</a>
@@ -162,7 +166,7 @@
         <div class="textContainer">
             <div class="textIndhold">
                 <h2>Musik på Ådalen</h2>
-                <img src="icons/musik.png" class="ikonStr" alt="Musik ikon">
+                <img src="icons/musikblaa.png" class="ikonStr" alt="Musik ikon">
             </div>
         </div>
 
@@ -176,33 +180,69 @@
                     <ul>
                         <li>at udtrykke dig gennem musik og blive bedre til at synge og spille</li>
                         <li>at lytte og skabe i samspil med andre</li>
-                       <li>rytmik, pulsfornemmelse, musikforståelse og musikteori</li>
-                       <li>at indsamle og producere din egen musik</li>
+                        <li>rytmik, pulsfornemmelse, musikforståelse og musikteori</li>
+                        <li>at indsamle og producere din egen musik</li>
                     </ul>
 
                     <!-- en linje her ? somehow-->
                     <img src="images/Line 2.svg" class="linjeHori" alt="horizontal linje">
 
                     <h3>Akustisk og elektrisk sammenspil på <br>
-                     musikefterskole</h3>
+                        musikefterskole</h3>
 
-                     <p>Vi arbejder på to sammenspilshold – et elektrisk og et akustisk. 
-                        Du vælger selv, hvad du giver dig i kast med ved årets start. 
-                        Vi har syv lektioner om ugen og lægger af og til nogle af timerne sammen, 
-                        så vi kan tage ud af huset og få musikken helt ind under huden, deltage i workshops, 
-                        åbne prøver og koncerter. Vores bands spiller foran andre efterskoler, 
-                        og af og til laver vi små pop-up-koncerter foran et kamera til Facebook, 
-                        rundt omkring på efterskolen eller i Aarhus, hvor vi skaber god stemning og viser, hvad vi kan.</p>
+                    <p>Vi arbejder på to sammenspilshold – et elektrisk og et akustisk.
+                        Du vælger selv, hvad du giver dig i kast med ved årets start.
+                        Vi har syv lektioner om ugen og lægger af og til nogle af timerne sammen,
+                        så vi kan tage ud af huset og få musikken helt ind under huden, deltage i workshops,
+                        åbne prøver og koncerter. Vores bands spiller foran andre efterskoler,
+                        og af og til laver vi små pop-up-koncerter foran et kamera til Facebook,
+                        rundt omkring på efterskolen eller i Aarhus, hvor vi skaber god stemning og viser, hvad vi kan.
+                    </p>
                 </div>
 
                 <div class="containerColumn billedePosRel">
-                    <img src="images/musikefterskole.svg" alt="musikefterskole">
-                    <div class="overlay">
-                    <h3>Musikefterskole - spil musik med vennerne</h3>
-                    <p>jeppe og Clara valgte at gå på musiklinjen for at udvikle sig kreativt
-                        og møde nye ligesindet mennesker.</p>
-                        <a href="#" class="knap2">Læs mere</a>
+                    <div class="autoGallery">
+                        <button class="pil" id="venstrePil" alt="venstre pil">
+                            &#60;
+                        </button>
+                        <div class="musikGallery" id="musik1">
+                            <img src="images/musikkarousel1.jpg" alt="musik billede">
+                            <div class="overlaySort">
+                                <h5>Musikefterskole - spil musik med vennerne</h5>
+                                <p>jeppe og Clara valgte at gå på musiklinjen for at udvikle sig kreativt
+                                    og møde nye ligesindet mennesker.</p>
+                                <a href="#" class="knap2">Læs mere</a>
+                            </div>
+                        </div>
+
+                        <div class="musikGallery" id="musik2">
+                            <img src="images/musikkarousel2.jpg" alt="musik billede">
+                            <div class="overlaySort">
+                                <h5>Musikefterskole - spil musik med vennerne</h5>
+                                <p>jeppe og Clara valgte at gå på musiklinjen for at udvikle sig kreativt
+                                    og møde nye ligesindet mennesker.</p>
+                                <a href="#" class="knap2">Læs mere</a>
+                            </div>
+                        </div>
+
+                        <div class="musikGallery" id="musik3">
+                            <img src="images/musikkarousel3.jpg" alt="musik billede">
+                            <div class="overlaySort">
+                                <h5>Musikefterskole - spil musik med vennerne</h5>
+                                <p>jeppe og Clara valgte at gå på musiklinjen for at udvikle sig kreativt
+                                    og møde nye ligesindet mennesker.</p>
+                                <a href="#" class="knap2">Læs mere</a>
+                            </div>
+                        </div>
+                        <button class="pil" id="hoejrePil" alt="hoejre pil">
+                            &#62;
+                        </button>
                     </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -211,28 +251,35 @@
 
 
         <!-- ************* sektion med h2, liste og billede ******** -->
-        <div class="textContainer">
+        <div class="textContainer moerkBg">
             <div class="textIndhold">
                 <h2> Efterskolens musik-instrumenter, <br> øvelokaler og lydstudie</h2>
-                <p>Du behøver ikke kunne spille et instrument, når du starter – vi skal nok vise dig, hvordan man holder en guitar! 
+                <p>Du behøver ikke kunne spille et instrument, når du starter – vi skal nok vise dig, hvordan man holder
+                    en guitar!
                     Du får mulighed for at afprøve dine skjulte talenter, og selvom du har spillet leadguitar i fire år,
                     kan der sagtens bo en dobbeltpedal-tosset trommeslager inden i dig.</p>
-                
-                <p>Det vigtigste er, at du har lyst til at lære noget nyt og er frisk på at få en ukulele i favnen eller en mikrofon i hånden. 
-                    Efterskolen har fuldt udstyrede musiklokaler med guitar, kontrabas, keyboard, 
-                    hammond-orgel, klaver, bas, trommer, percussion, ukulele, et fuldt samba-orkester og mange flere instrumenter. 
+
+                <p>Det vigtigste er, at du har lyst til at lære noget nyt og er frisk på at få en ukulele i favnen eller
+                    en mikrofon i hånden.
+                    Efterskolen har fuldt udstyrede musiklokaler med guitar, kontrabas, keyboard,
+                    hammond-orgel, klaver, bas, trommer, percussion, ukulele, et fuldt samba-orkester og mange flere
+                    instrumenter.
                     Vi har også særprægede gamle vintage-instrumenter. </p>
-                    
-                <p>I det ene musiklokale spiller vi elektriske numre. Vi fyrer den af, det bliver højt, og du får måske brug for ørepropper.
-                    I det akustiske musiklokale spiller vi akustisk. Vi spiller på kontrabas, klaver, ukuleler, harmonika … 
+
+                <p>I det ene musiklokale spiller vi elektriske numre. Vi fyrer den af, det bliver højt, og du får måske
+                    brug for ørepropper.
+                    I det akustiske musiklokale spiller vi akustisk. Vi spiller på kontrabas, klaver, ukuleler,
+                    harmonika …
                     alt der kan spilles på uden strøm. Så spiller du tværfløjte eller harpe, er det lige noget for dig.
-                    Vi har også et lille lydstudie, hvor vi arbejder på Mac i logiv, Garageband eller Fruity Loops. 
+                    Vi har også et lille lydstudie, hvor vi arbejder på Mac i logiv, Garageband eller Fruity Loops.
                     Vi har 24 spor, så du kan optage dit band. Du kan også lægge beats, vokal eller en rap ovenpå.</p>
             </div>
         </div>
 
-     
 
+        <div class="centerKnap plads">
+            <a href="#" class="knap1">Indmelding</a>
+        </div>
 
 
         <div class="textContainer">
@@ -241,21 +288,23 @@
 
                 <div class="læreImg">
                     <div class="laerer">
-                        <img src="images/Hanne.svg" alt="Hanne Jensen, billedkunstlærer">
+                        <img src="images/hjalte.svg" alt="Hjalte Stein, musikunderviser">
                         <div class="overlay">
-                            <h5>Hanne Jensen</h5>
-                            <p>billedkunstlærer</p>
+                            <h5>Hjalte Stein</h5>
+                            <p>Underviser kor på musiklinjen</p>
                         </div>
                     </div>
 
                     <div class="laerer">
-                        <img src="images/Karen.svg" alt="Karen Christensen, kunstlærer">
+                        <img src="images/Niels.svg" alt="Niels Boelsmand, musikunderviser">
                         <div class="overlay">
-                            <h5>Karen Christensen</h5>
-                            <p>Kunstlærer</p>
+                            <h5>Niels Boelsmand</h5>
+                            <p>Underviser band på musiklinjen</p>
                         </div>
                     </div>
                 </div>
+
+
 
 
             </div>

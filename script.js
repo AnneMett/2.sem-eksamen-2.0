@@ -173,5 +173,74 @@ window.onclick = function(event) {
 }
  
  
+ /* det her er til de andre linjefagssider - primært musik
+ reference: Andreas, undervisning -->
+ JavaScript 4 - ANKT - 01-09-2023 & 
+ Programmering 6 - ANKT - 13-10-2023 */
+
  
+// Variabler for billedegallery med pile-knapper. 
+//hvet af variabler henter et element i html ud fra id - fx. musik1
+const musik1 = document.getElementById("musik1");  
+const musik2 = document.getElementById("musik2");  
+const musik3 = document.getElementById("musik3");  
+const hoejrePil = document.getElementById("hoejrePil");  
+const venstrePil = document.getElementById("venstrePil"); 
+
+// det her opretter et array med billederne i karusellen
+const carousel = [musik1, musik2, musik3];  
+ // Iog her initialiseres en variabel for det aktuelle billede (indeks i arrayet)
+let currentImageIndex = 0; 
+// værdien er 0 fordi array altid starter fra 0, så det er det første billede
+
+// her vises det første billede ved at ændre dets display-stil til "block" som gør det synligt
+musik1.style.display = "block"; 
+// og de to andre billeder skjules ved at ændre deres display til none. 
+musik2.style.display = "none";  
+musik3.style.display = "none";
+
+// her bruger vi evenlistener til at lytte efter et klik på højre eller venstre pil,
+// og ud fra det så bliver der en tilsvarende function. functionerne er nedenunder. 
+hoejrePil.addEventListener("click", naesteBillede);  
+venstrePil.addEventListener("click", forrigeBillede);  
+
+// det her er en function til at vise det næste billede
+function naesteBillede() {
+    // her skjules det aktuelle billede
+    carousel[currentImageIndex].style.display = "none";  
+    // så opdateres indekset til det næste billede ved at sige nuværende billede index og plus en. 
+    currentImageIndex = (currentImageIndex + 1) % carousel.length;  
+    // og her vises det nye/ næste billede
+    carousel[currentImageIndex].style.display = "block";  
+}
+
+// her er funktionen til at vise det forrige billede, samme princip som ovenover
+function forrigeBillede() {
+    // aktuelle billede bliver skjult
+    carousel[currentImageIndex].style.display = "none";  
+    // array bliver opdateret = nuværende billede minus 1 billede. 
+    currentImageIndex = (currentImageIndex - 1 + carousel.length) % carousel.length;  
+    // og det nye/ forrige billede vises
+    carousel[currentImageIndex].style.display = "block";  
+}
+
+
+// men det er ikke nok bare at have en manuel skfit af billederne, så her er der en auto funktion. 
+// først startes en timer til automatisk skift af billederne. 
+const timer = window.setInterval(naesteBillede, 9000);  // 9000 = 9 sekunder, så folk har en chance for at læse teksten. 
+
+
+// og her er endnu en funktion til at skifte billederne, hvis man fx ikke har en mus
+// først en evenlistener som lytter til om en knap - altså tastatur knap - er trykket på. 
+document.addEventListener("keydown", function (event) { 
+    if (event.key === "ArrowLeft") {
+        // hvis venstre piletast er blevet trykket, så udføres forrigeBillede-funktionen.
+        forrigeBillede();  
+    } else if (event.key === "ArrowRight") {
+        // og modsat hvis højre piletast er trykket, så udføres næsteBillede-funktionen. 
+        naesteBillede();  
+    }
+});
+
+
 

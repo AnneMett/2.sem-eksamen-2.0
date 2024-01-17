@@ -668,7 +668,7 @@ footer a{
 h5{
   color: var(--text-primary);
   font-family: var(--font-primary);
-  font-size: 1.7vw;
+  font-size: 1.5vw;
 }
 
 .overlay{
@@ -706,14 +706,9 @@ h5{
 }
 
 
-.containerColumn p{
-  font-size: 1.5vw;
-}
-
 .containerColumn li{
   list-style: disc;
   margin-left: 2%;
-  font-size: 1.5vw;
 }
 
 
@@ -730,6 +725,51 @@ h5{
 
 .textIndhold h2{
   margin: 2% 26%;
+}
+
+.autoGallery{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pil{
+  height: 50px;
+  width: 50px;
+  font-size: 40pt;
+  align-items: center;
+  background: none;
+  color: var(--bg-accent);
+  border:none;
+}
+
+.musikGallery{
+  position: relative;
+  border-radius: 15px;
+}
+
+.musikGallery img{
+  border-radius: 15px;
+}
+
+.overlaySort{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  max-height: 200px;
+  background-color: var(--bg-secondary);
+  color: white;
+  padding: 2% 2% 5% 2%;
+  border-radius: 15px 15px 0 0;
+}
+
+.overlaySort p{
+  margin-bottom: 5%;;
+}
+
+.plads{
+  margin-top: 5%;
 }
 
 
@@ -1290,7 +1330,11 @@ ul li{
 
   /* footer */
 
+  .højreside{
+    margin-left: 4%;
+  }
   
+
 .højreside iframe {
   border-radius: 15px;
   margin: 2% 0; 
@@ -1372,9 +1416,29 @@ ul li{
   font-size: 12pt;
 }
 
-.containerColumn li, p{
+.containerColumn p{
   font-size: 10pt;
 }
+
+.containerColumn li{
+  font-size: 10pt;
+  margin-left: 5%;
+}
+
+.containerColumn h5{
+  font-size: 12pt;
+}
+
+.containerColumn h3{
+  font-size: 14pt;
+}
+
+.billedePosRel{
+  margin: auto;
+  margin-top: 5%;
+
+}
+
 
 }
 
@@ -1665,4 +1729,14 @@ ul li{
     display: flex;
     flex-direction: row;
   }
+
+  
+.containerColumn p{
+  font-size: 1.5vw;
+}
+
+.containerColumn li{
+  font-size: 1.5vw;
+}
+
 }

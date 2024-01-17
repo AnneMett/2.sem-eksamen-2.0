@@ -26,127 +26,129 @@
      **************************** -->
 
 <body>
-    <header>
-        <!-- ********** nav bar til laptop med dropdown *************
-         ******* ref: w3schools ****** -->
-        <nav id="laptopNav">
-            <a href="index.html"><img id="logo" src="images/logo-stor-1.svg" alt="Logo"></a>
-            <img src="images/Line-5.png" alt="Linje">
+  <header>
+    <!-- ********** nav bar til laptop med dropdown *************
+     ******* ref: w3schools ****** -->
+    <nav id="laptopNav">
+      <a href="index.html"><img id="logo" src="images/logo-stor-1.svg" alt="Logo"></a>
+      <img src="images/Line-5.png" alt="Linje">
 
 
-            <!-- Dropdown til "Om skolen" -->
-            <div class="dropdown">
-                <button onclick="toggleDropdown('omSkolenDropdown')" class="dropbtn">Om skolen</button>
-                <div id="omSkolenDropdown" class="dropdown-content">
-                    <a href="#">Bestyrelse & skolekred</a>
-                    <a href="#">Værdigrundlag</a>
-                    <a href="#">Medarbejdere</a>
-                    <a href="#">Lovpligtdig dokumentation</a>
-                    <a href="#">Gamle elever forening</a>
-                    <a href="#">Årsplan</a>
-                    <a href="#">Ledige pladser</a>
-                    <a href="#">Pris</a>
-                </div>
-            </div>
-
-            <!-- Dropdown til "Linjefag" -->
-            <div class="dropdown">
-                <button onclick="toggleDropdown('linjefagDropdown')" class="dropbtn">Linjefag</button>
-                <div id="linjefagDropdown" class="dropdown-content">
-                    <a href="Billedkunst.html">Billedkunst</a>
-                    <a href="#">Drama</a>
-                    <a href="#">E-sport</a>
-                    <a href="#">Musik</a>
-                    <a href="#">Sport</a>
-                </div>
-            </div>
-
-            <!-- Dropdown til "Undervisning" -->
-            <div class="dropdown">
-                <button onclick="toggleDropdown('undervisningDropdown')" class="dropbtn">Undervisning</button>
-                <div id="undervisningDropdown" class="dropdown-content">
-                    <a href="#">9. klasse</a>
-                    <a href="#">10. klasse</a>
-                    <a href="#">Prøvefri 10. klasse</a>
-                    <a href="#">Studievejledning</a>
-                    <a href="#">Musik og teaterforestilling</a>
-                    <a href="#">Rejser</a>
-                    <a href="#">Elever fra Grønland & Færøerne</a>
-                    <a href="#">Dansk som andet sprog</a>
-                </div>
-            </div>
-
-            <!-- Dropdown til "Livet på Ådalen" -->
-            <div class="dropdown">
-                <button onclick="toggleDropdown('livetPaSkolenDropdown')" class="dropbtn">Livet på Ådalen</button>
-                <div id="livetPaSkolenDropdown" class="dropdown-content">
-                    <a href="#">Sund mad</a>
-                    <a href="#">Medindflydelse</a>
-                    <a href="#">Hverdagen</a>
-                    <a href="#">Inklusion</a>
-                </div>
-            </div>
-
-            <a href="tilmeldbesoegsdag.html" class="knap1">Besøg skolen</a>
-        </nav>
-
-        <nav id="mobilNav">
-            <!-- **************** nav bar til mobil med burger *******
-            ref: ** -->
-            <a href="index.html"><img src="images/logo-mobil.png" alt="Logo"></a>
-            <div class="hamburger">
-                <div class="bar">
-                </div>
-            </div>
-        </nav>
-    </header>
-    <nav class="mobile-nav">
-        <button class="accordion">Om skolen</button> 
-        <div class="panel">
-            <a href="#">Bestyrelse & skolekred</a>
-            <a href="#">Medarbejdere</a>
-            <a href="#">Lovpligtdig dokumentation</a>
-            <a href="#">Gamle elever forening</a>
-            <a href="#">Årsplan</a>
-            <a href="#">Ledige pladser</a>
-            <a href="#">Pris</a>
+      <!-- Dropdown til "Om skolen" -->
+      <div class="dropdown">
+        <button onclick="toggleDropdown('omSkolenDropdown')" class="dropbtn">Om skolen</button>
+        <div id="omSkolenDropdown" class="dropdown-content">
+          <a href="#">Bestyrelse & skolekred</a>
+          <a href="#">Værdigrundlag</a>
+          <a href="#">Medarbejdere</a>
+          <a href="#">Lovpligtdig dokumentation</a>
+          <a href="#">Gamle elever forening</a>
+          <a href="#">Årsplan</a>
+          <a href="#">Ledige pladser</a>
+          <a href="#">Pris</a>
         </div>
+      </div>
 
-
-        <button class="accordion">Linjefag</button>
-        <div class="panel">
-            <a href="Billedkunst.html">Billedkunst</a>
-            <a href="#">Drama</a>
-            <a href="#">E-sport</a>
-            <a href="#">Musik</a>
-            <a href="#">Sport</a>
+      <!-- Dropdown til "Linjefag" -->
+      <div class="dropdown">
+        <button onclick="toggleDropdown('linjefagDropdown')" class="dropbtn">Linjefag</button>
+        <div id="linjefagDropdown" class="dropdown-content">
+          <a href="Billedkunst.html">Billedkunst</a>
+          <a href="#">Drama</a>
+          <a href="#">E-sport</a>
+          <a href="musik.html">Musik</a>
+          <a href="#">Sport</a>
         </div>
+      </div>
 
-        <button class="accordion">Undervisning</button>
-        <div class="panel">
-            <a href="#">9. klasse</a>
-            <a href="#">10. klasse</a>
-            <a href="#">Prøvefri 10. klasse</a>
-            <a href="#">Studievejledning</a>
-            <a href="#">Musik og teaterforestilling</a>
-            <a href="#">Rejser</a>
-            <a href="#">Elever fra Grønland & Færøerne</a>
-            <a href="#">Dansk som andet sprog</a>
+      <!-- Dropdown til "Undervisning" -->
+      <div class="dropdown">
+        <button onclick="toggleDropdown('undervisningDropdown')" class="dropbtn">Undervisning</button>
+        <div id="undervisningDropdown" class="dropdown-content">
+          <a href="#">9. klasse</a>
+          <a href="#">10. klasse</a>
+          <a href="#">Prøvefri 10. klasse</a>
+          <a href="#">Studievejledning</a>
+          <a href="#">Musik og teaterforestilling</a>
+          <a href="#">Rejser</a>
+          <a href="#">Elever fra Grønland & Færøerne</a>
+          <a href="#">Dansk som andet sprog</a>
         </div>
+      </div>
 
-
-        <button class="accordion">Livet på Ådalen</button>
-        <div class="panel">
-            <a href="#">Sund mad</a>
-            <a href="#">Medindflydelse</a>
-            <a href="#">Hverdagen</a>
-            <a href="#">Inklusion</a>
+      <!-- Dropdown til "Livet på Ådalen" -->
+      <div class="dropdown">
+        <button onclick="toggleDropdown('livetPaSkolenDropdown')" class="dropbtn">Livet på Ådalen</button>
+        <div id="livetPaSkolenDropdown" class="dropdown-content">
+          <a href="#">Sund mad</a>
+          <a href="#">Medindflydelse</a>
+          <a href="#">Hverdagen</a>
+          <a href="#">Inklusion</a>
         </div>
+      </div>
 
-        <a href="tilmeldbesoegsdag.html" class="knap1">Besøg skolen</a>
-
-
+      <a href="tilmeldbesoegsdag.html" class="knap1">Besøg skolen</a>
     </nav>
+
+    <nav id="mobilNav">
+      <!-- **************** nav bar til mobil med burger *******
+        ref: ** -->
+      <a href="index.html"><img src="images/logo-mobil.png" alt="Logo"></a>
+      <div class="hamburger">
+        <div class="bar">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <nav class="mobile-nav">
+
+
+    <button class="accordion">Om skolen</button>
+    <div class="panel">
+      <a href="#">Bestyrelse & skolekred</a>
+      <a href="#">Medarbejdere</a>
+      <a href="#">Lovpligtdig dokumentation</a>
+      <a href="#">Gamle elever forening</a>
+      <a href="#">Årsplan</a>
+      <a href="#">Ledige pladser</a>
+      <a href="#">Pris</a>
+    </div>
+
+
+    <button class="accordion">Linjefag</button>
+    <div class="panel">
+      <a href="Billedkunst.html">Billedkunst</a>
+      <a href="#">Drama</a>
+      <a href="#">E-sport</a>
+      <a href="musik.html">Musik</a>
+      <a href="#">Sport</a>
+    </div>
+
+    <button class="accordion">Undervisning</button>
+    <div class="panel">
+      <a href="#">9. klasse</a>
+      <a href="#">10. klasse</a>
+      <a href="#">Prøvefri 10. klasse</a>
+      <a href="#">Studievejledning</a>
+      <a href="#">Musik og teaterforestilling</a>
+      <a href="#">Rejser</a>
+      <a href="#">Elever fra Grønland & Færøerne</a>
+      <a href="#">Dansk som andet sprog</a>
+    </div>
+
+
+    <button class="accordion">Livet på Ådalen</button>
+    <div class="panel">
+      <a href="#">Sund mad</a>
+      <a href="#">Medindflydelse</a>
+      <a href="#">Hverdagen</a>
+      <a href="#">Inklusion</a>
+    </div>
+
+    <a href="tilmeldbesoegsdag.html" class="knap1">Besøg skolen</a>
+
+
+  </nav>
 
     <main>
   
@@ -163,7 +165,7 @@
         <div class="textContainer">
             <div class="textIndhold">
               <h2>Billedkunst på Ådalen</h2>
-              <img src="icons/billedkunst.png" class="ikonStr" alt="billedekunst ikon">
+              <img src="icons/billedkunsticon.png" class="ikonStr" alt="billedekunst ikon">
                 <p>Linjefaget billedkunst er for alle. Uanset om du udtrykker dig sikkert gennem tegning, maleri, collage,
                     skulptur, eller du er begynder. Vælg billedkunstlinjen på Efterskolen Ådalen, hvis du gerne vil udvikle dine
                     kreative evner, teknik og tankegang. Du har undervisning i dit linjefag syv lektioner om ugen.</p>
