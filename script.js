@@ -243,4 +243,100 @@ document.addEventListener("keydown", function (event) {
 });
 
 
+/* ----------- her er til bekræft siden ------
+************ men det virker ikke and we don't know why *************  
 
+   // Variabel til at gemme den valgte dato
+   var selectedDate = null;
+
+   // Funktion til at håndtere valg af dato
+   function selectDate(date) {
+       // Opdater den valgte datovariabel
+       selectedDate = date;
+
+       // Vis den valgte dato
+       updateSelectedDateText();
+   }
+
+   // Funktion til at opdatere den viste valgte dato
+   function updateSelectedDateText() {
+       // Hent elementet, hvor vi vil vise den valgte dato
+       var selectedDateTextElement = document.getElementById("selectedDateText");
+
+       // Opdater indholdet af elementet med den valgte dato
+       selectedDateTextElement.innerHTML = "Valgt Dato: " + (selectedDate ? selectedDate : "Ingen");
+   }
+
+
+   function skiftSektion() {
+    var sektion1 = document.getElementById('sektion1');
+    var sektion2 = document.getElementById('sektion2');
+
+    if (sektion1.style.display !== 'none') {
+      sektion1.style.display = 'none';
+      sektion2.style.display = 'block';
+    } else {
+      sektion1.style.display = 'block';
+      sektion2.style.display = 'none';
+    }
+  }
+
+
+/*
+//bekræft show up -- virker ikke :'(
+    const bekraeftShowUp = getElementById("bekraeftshowup");
+    const blanketInfo = getElementById("blanketinfo");
+    const tilmeldingsForm = getElementById("tilmeldingsform");
+    const sendTilmelding = getElementById("sendtilmelding");
+    
+    sendTilmelding.addEventListener("click", visBekraeftelse )
+    function visBekraeftelse(){
+        blanketInfo.style.display = "none";
+        tilmeldingsForm.style.display = "none";
+        bekraeftShowUp.style.display = "block";
+    
+        const besoegsdatoValue = getElementsByName("besoesdato");
+        let valgtDato = "";
+
+            //chatgbt har lavet resten 
+
+        for (let i = 0; i < besoegsdatoValue.length; i++) { //et loop 
+            if (besoegsdatoValue[i].checked) {
+                valgtDato = besoegsdatoValue[i].value;
+                break;
+            }
+        }
+        // Opdater teksten i bekraeftshowup h3-elementet
+        bekraeftShowUp.querySelector("h3.gul").innerText = `Vi glæder os til at se jer d. ${valgtDato}`;
+    }
+ */    
+    /* *******fra chatgbt til bekræfthalløj
+    const bekraeftShowUp = document.getElementById("bekraeftshowup");
+    const blanketInfo = document.getElementById("blanketinfo");
+    const tilmeldingsForm = document.getElementById("tilmeldingsform");
+    const sendTilmelding = document.getElementById("sendtilmelding");
+    
+    sendTilmelding.addEventListener("click", visBekraeftelse);
+    
+    function visBekraeftelse() {
+        // Skjul blanketInfo og tilmeldingsForm
+        blanketInfo.style.display = "none";
+        tilmeldingsForm.style.display = "none";
+    
+        // Find den valgte besøgsdato
+        const besoegsDatoElements = document.getElementsByName("besoesdato");
+        let valgtDato = "";
+        for (let i = 0; i < besoegsDatoElements.length; i++) {
+            if (besoegsDatoElements[i].checked) {
+                valgtDato = besoegsDatoElements[i].value;
+                break;
+            }
+        }
+    
+        // Opdater teksten i bekraeftshowup h3-elementet
+        bekraeftShowUp.querySelector("h3.gul").innerText = `Vi glæder os til at se jer d. ${valgtDato}`;
+    
+        // Vis bekraeftShowUp
+        bekraeftShowUp.style.display = "block";
+    }*/
+    
